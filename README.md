@@ -10,8 +10,11 @@
 ## For Heroku
 Need to add buildpacks for Nodejs and ffmpeg
 after creating project go to **Setting**>**Add buildpack**
-- first select nodejs from the list
-- Then add https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git to the buildpack list
+#### Warning next steps
+
+make sure you add the ffmpeg buildpack first otherwise it will give your error. ffpmeg needs to be setup before nodejs just like reoping the terminal on your local machine for ffmpeg cmd.
+- first add https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git to the buildpack list
+- Then select nodejs from the list
 - So, there is two buildpack now.
 
 Now, add the repo in heroku and automatic deploy to work with github push changes.
