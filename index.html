@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Converter</title>
     <style>
+        body {
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        }
+
         .container {
             max-width: 500px;
             margin: auto;
@@ -28,12 +32,18 @@
 
 <body>
     <div class="container">
-        <h1>Mp4 to Mp3 Converter</h1>
+        <h1>Video to Audio Converter</h1>
         <form action="/convert" method="post" enctype="multipart/form-data" class="converter-form">
             <!-- the name attribute will use on multer upload-->
             <input type="file" name="file" required>
             <button>Convert to Mp3</button>
         </form>
+        <div>
+            <p><strong>Tested Video Formats: </strong> Mp4, Avi</p>
+        </div>
+        <p><strong>Security: </strong>
+            We don't save your uploaded file on the server.
+            We just convert the file and send it to you.</p>
     </div>
 </body>
 
