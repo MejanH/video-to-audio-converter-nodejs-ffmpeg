@@ -1,3 +1,5 @@
+![video to audio converter with Nodejs demo](./demo.gif)
+
 # Convert any Videos(ffmpeg formats support) to mp3 Audio with Nodejs
 
 **npm packages:**
